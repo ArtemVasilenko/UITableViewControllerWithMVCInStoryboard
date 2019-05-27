@@ -14,6 +14,7 @@
 		AC7CD203229C52DB00AC9966 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC7CD201229C52DB00AC9966 /* LaunchScreen.storyboard */; };
 		AC7CD20B229C540E00AC9966 /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7CD20A229C540E00AC9966 /* MyTableViewController.swift */; };
 		AC7CD20D229C569A00AC9966 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7CD20C229C569A00AC9966 /* MyTableViewCell.swift */; };
+		AC7CD20F229C578C00AC9966 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7CD20E229C578C00AC9966 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		AC7CD204229C52DB00AC9966 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC7CD20A229C540E00AC9966 /* MyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
 		AC7CD20C229C569A00AC9966 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		AC7CD20E229C578C00AC9966 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				AC7CD1FC229C52D900AC9966 /* Main.storyboard */,
 				AC7CD20C229C569A00AC9966 /* MyTableViewCell.swift */,
 				AC7CD20A229C540E00AC9966 /* MyTableViewController.swift */,
+				AC7CD20E229C578C00AC9966 /* Model.swift */,
 				AC7CD1FF229C52DB00AC9966 /* Assets.xcassets */,
 				AC7CD201229C52DB00AC9966 /* LaunchScreen.storyboard */,
 				AC7CD204229C52DB00AC9966 /* Info.plist */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC7CD20F229C578C00AC9966 /* Model.swift in Sources */,
 				AC7CD1FB229C52D900AC9966 /* ViewController.swift in Sources */,
 				AC7CD20D229C569A00AC9966 /* MyTableViewCell.swift in Sources */,
 				AC7CD20B229C540E00AC9966 /* MyTableViewController.swift in Sources */,

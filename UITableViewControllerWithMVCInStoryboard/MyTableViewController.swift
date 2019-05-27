@@ -1,26 +1,40 @@
-//
-//  MyTableViewController.swift
-//  UITableViewControllerWithMVCInStoryboard
-//
-//  Created by Артем on 5/27/19.
-//  Copyright © 2019 Артем. All rights reserved.
-//
-
 import UIKit
 
 class MyTableViewController: UITableViewController {
-
+    
+    var itemArray = [Model]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        let item = Model(name: "Holodov", prof: "mentor")
+        itemArray.append(item)
+        
     }
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 0
+        return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return itemArray.count
     }
-
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as? MyTableViewCell {
+            
+            let item = itemArray[indexPath.row]
+            cell.refresh(item)
+            
+            return cell
+        }
+        
+        return UITableViewCell()
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
+    
 }
