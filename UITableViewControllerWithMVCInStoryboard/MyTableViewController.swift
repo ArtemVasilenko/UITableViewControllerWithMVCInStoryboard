@@ -8,9 +8,12 @@ class MyTableViewController: UITableViewController {
         super.viewDidLoad()
         
         let item = Model(name: "Holodov", prof: "mentor")
+        let item2 = Model(name: "Holodov2", prof: "mentor2")
         itemArray.append(item)
+        itemArray.append(item2)
         
     }
+    
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
